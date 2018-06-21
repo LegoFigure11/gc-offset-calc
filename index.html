@@ -148,8 +148,39 @@
 			
 			a += "Starting offset: 0x" + z +"\n\n";
 			
+			// Colo PID Input
 			if (game = "Colo") {
 				if (y.indexOf("P") != -1) {
+					// Colo PID Input
+					PID1 = "Slot 1 PID: " + toPaddedHexString((parseInt(z, 16) + (0 * pokemonOffset)).toString(16), 8) + "\n";
+					IV1 = "Slot 1 IVs[0]: " + toPaddedHexString((parseInt(z, 16) + (0 * pokemonOffset) + (ivOffset + 0)).toString(16), 8) + "\n"
+					+ "Slot 1 IVs[1]: " + toPaddedHexString((parseInt(z, 16) + (0 * pokemonOffset) + (ivOffset + 4)).toString(16), 8) + "\n"
+					+ "Slot 1 IVs[2]: " + toPaddedHexString((parseInt(z, 16) + (0 * pokemonOffset) + (ivOffset + 8)).toString(16), 8) + "\n\n";
+					PID2 = "Slot 2 PID: " + toPaddedHexString((parseInt(z, 16) + (1 * pokemonOffset)).toString(16), 8) + "\n";
+					IV2 = "Slot 2 IVs[0]: " + toPaddedHexString((parseInt(z, 16) + (1 * pokemonOffset) + (ivOffset + 0)).toString(16), 8) + "\n"
+					+ "Slot 2 IVs[1]: " + toPaddedHexString((parseInt(z, 16) + (1 * pokemonOffset) + (ivOffset + 4)).toString(16), 8) + "\n"
+					+ "Slot 2 IVs[2]: " + toPaddedHexString((parseInt(z, 16) + (1 * pokemonOffset) + (ivOffset + 8)).toString(16), 8) + "\n\n";
+					PID3 = "Slot 3 PID: " + toPaddedHexString((parseInt(z, 16) + (2 * pokemonOffset)).toString(16), 8) + "\n";
+					IV3 = "Slot 3 IVs[0]: " + toPaddedHexString((parseInt(z, 16) + (2 * pokemonOffset) + (ivOffset + 0)).toString(16), 8) + "\n"
+					+ "Slot 3 IVs[1]: " + toPaddedHexString((parseInt(z, 16) + (2 * pokemonOffset) + (ivOffset + 4)).toString(16), 8) + "\n"
+					+ "Slot 3 IVs[2]: " + toPaddedHexString((parseInt(z, 16) + (2 * pokemonOffset) + (ivOffset + 8)).toString(16), 8) + "\n\n";
+					PID4 = "Slot 4 PID: " + toPaddedHexString((parseInt(z, 16) + (3 * pokemonOffset)).toString(16), 8) + "\n";
+					IV4 = "Slot 4 IVs[0]: " + toPaddedHexString((parseInt(z, 16) + (3 * pokemonOffset) + (ivOffset + 0)).toString(16), 8) + "\n"
+					+ "Slot 4 IVs[1]: " + toPaddedHexString((parseInt(z, 16) + (3 * pokemonOffset) + (ivOffset + 4)).toString(16), 8) + "\n"
+					+ "Slot 4 IVs[2]: " + toPaddedHexString((parseInt(z, 16) + (3 * pokemonOffset) + (ivOffset + 8)).toString(16), 8) + "\n\n";
+					PID5 = "Slot 5 PID: " + toPaddedHexString((parseInt(z, 16) + (4 * pokemonOffset)).toString(16), 8) + "\n";
+					IV5 = "Slot 5 IVs[0]: " + toPaddedHexString((parseInt(z, 16) + (4 * pokemonOffset) + (ivOffset + 0)).toString(16), 8) + "\n"
+					+ "Slot 5 IVs[1]: " + toPaddedHexString((parseInt(z, 16) + (4 * pokemonOffset) + (ivOffset + 4)).toString(16), 8) + "\n"
+					+ "Slot 5 IVs[2]: " + toPaddedHexString((parseInt(z, 16) + (4 * pokemonOffset) + (ivOffset + 8)).toString(16), 8) + "\n\n";
+					PID6 = "Slot 6 PID: " + toPaddedHexString((parseInt(z, 16) + (5 * pokemonOffset)).toString(16), 8) + "\n";
+					IV6 = "Slot 6 IVs[0]: " + toPaddedHexString((parseInt(z, 16) + (5 * pokemonOffset) + (ivOffset + 0)).toString(16), 8) + "\n"
+					+ "Slot 6 IVs[1]: " + toPaddedHexString((parseInt(z, 16) + (5 * pokemonOffset) + (ivOffset + 4)).toString(16), 8) + "\n"
+					+ "Slot 6 IVs[2]: " + toPaddedHexString((parseInt(z, 16) + (5 * pokemonOffset) + (ivOffset + 8)).toString(16), 8) + "\n\n";
+				}
+				if (y.indexOf("V") != -1) {
+					// Colo IVs Input
+					var z1 = toPaddedHexString((parseInt(z, 16) + (0 * pokemonOffset) - (ivOffset + 0)).toString(16), 8);
+					z = z1;
 					PID1 = "Slot 1 PID: " + toPaddedHexString((parseInt(z, 16) + (0 * pokemonOffset)).toString(16), 8) + "\n";
 					IV1 = "Slot 1 IVs[0]: " + toPaddedHexString((parseInt(z, 16) + (0 * pokemonOffset) + (ivOffset + 0)).toString(16), 8) + "\n"
 					+ "Slot 1 IVs[1]: " + toPaddedHexString((parseInt(z, 16) + (0 * pokemonOffset) + (ivOffset + 4)).toString(16), 8) + "\n"
