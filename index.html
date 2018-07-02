@@ -115,8 +115,6 @@
 		};
 		
 		function printInput() {
-			pokemonOffset = 0x138;
-			ivOffset = 0xa0;
 			z = toPaddedHexString(z, 8);
 			if (!isHex(z) || z.length > 8) {
 				valid = false;
@@ -126,8 +124,11 @@
 				game = "Colo";
 				if (w.indexOf("EU") != -1) {
 					a += "Pokemon Colosseum (EU): " + x;
+					pokemonOffset = 0x138;
+					ivOffset = 0xa0;
 				} else {
 					a += "Pokemon Colosseum (US): " + x;
+					pokemonOffset = 0x138					ivOffset = 0xa0;
 				}
 			} else if (w.indexOf("X") != -1) {
 				game = "XD";
